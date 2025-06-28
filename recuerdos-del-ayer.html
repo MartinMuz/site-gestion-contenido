@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reorganización de Categorías - Antigüedades</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      display: flex;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    .sidebar {
+      width: 300px;
+      flex-shrink: 0;
+      background-color: #343a40;
+    }
+    .sidebar .accordion-button {
+      background-color: #343a40;
+      color: #fff;
+    }
+    .sidebar .accordion-button:not(.collapsed) {
+      background-color: #495057;
+    }
+    .sidebar .accordion-body a {
+      color: #adb5bd;
+      text-decoration: none;
+      display: block;
+      padding: 0.25rem 0;
+    }
+    .sidebar .accordion-body a:hover {
+      color: #fff;
+    }
+    .main-content {
+      flex-grow: 1;
+      padding: 2rem;
+      background-color: #f8f9fa;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar p-3">
+    <h4 class="text-white mb-3"><i class="bi bi-shop"></i> Recuerdos del ayer</h4>
+    <div class="accordion" id="accordionMenu">
+
+      <div class="accordion-item bg-dark border-0">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true">
+            Tecnología y Aparatos Antiguos
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+            <a href="#"><i class="bi bi-watch"></i> Relojes de bolsillo</a>
+            <a href="#"><i class="bi bi-vinyl"></i> Gramófono</a>
+            <a href="#"><i class="bi bi-keyboard"></i> Máquina de escribir</a>
+            <a href="#"><i class="bi bi-telephone"></i> Teléfono de baquelita</a>
+            <a href="#"><i class="bi bi-broadcast"></i> Radio a válvulas</a>
+            <a href="#"><i class="bi bi-radio"></i> Radios portátiles</a>
+            <a href="#"><i class="bi bi-film"></i> Cámaras Super 8</a>
+            <a href="#"><i class="bi bi-camera"></i> Cámara fotográfica antigua</a>
+            <a href="#"><i class="bi bi-cash-register"></i> Cajas registradoras mecánicas</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item bg-dark border-0">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            Documentos, Escritura y Publicaciones
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <a href="#"><i class="bi bi-pen"></i> Plumas estilográficas</a>
+            <a href="#"><i class="bi bi-book"></i> Libros encuadernados en cuero</a>
+            <a href="#"><i class="bi bi-journal"></i> Revistas de los años 50</a>
+            <a href="#"><i class="bi bi-journals"></i> Enciclopedias siglo XIX</a>
+            <a href="#"><i class="bi bi-award"></i> Diplomas antiguos</a>
+            <a href="#"><i class="bi bi-envelope"></i> Sellos postales</a>
+            <a href="#"><i class="bi bi-coin"></i> Monedas antiguas</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item bg-dark border-0">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+            Arte, Decoración y Mobiliario
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <a href="#"><i class="bi bi-easel2"></i> Cuadro de óleo</a>
+            <a href="#"><i class="bi bi-palette"></i> Pinturas religiosas</a>
+            <a href="#"><i class="bi bi-collection"></i> Espejo dorado</a>
+            <a href="#"><i class="bi bi-megaphone"></i> Carteles vintage</a>
+            <a href="#"><i class="bi bi-fan"></i> Abanicos decorativos</a>
+            <a href="#"><i class="bi bi-lightbulb"></i> Candelabros de bronce</a>
+            <a href="#"><i class="bi bi-door-open"></i> Muebles coloniales</a>
+            <a href="#"><i class="bi bi-chair"></i> Sillas mecedoras</a>
+            <a href="#"><i class="bi bi-lightning"></i> Lámparas de querosene</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item bg-dark border-0">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+            Ciencia, Observación y Exploración
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <a href="#"><i class="bi bi-binoculars"></i> Binoculares antiguos</a>
+            <a href="#"><i class="bi bi-eyeglasses"></i> Telescopios antiguos</a>
+            <a href="#"><i class="bi bi-map"></i> Mapas antiguos</a>
+            <a href="#"><i class="bi bi-globe-americas"></i> Globos terráqueos</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item bg-dark border-0">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+            Juguetes y Coleccionables
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <a href="#"><i class="bi bi-joystick"></i> Juguetes de hojalata</a>
+            <a href="#"><i class="bi bi-person-gear"></i> Muñecas de porcelana</a>
+            <a href="#"><i class="bi bi-horse"></i> Caballos de carrusel</a>
+            <a href="#"><i class="bi bi-cup-straw"></i> Juegos de té</a>
+            <a href="#"><i class="bi bi-stickies"></i> Bastones tallados</a>
+            <a href="#"><i class="bi bi-trophy"></i> Trofeos antiguos</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item bg-dark border-0">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix">
+            Instrumentos y Objetos Especializados
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <a href="#"><i class="bi bi-music-note-beamed"></i> Violín antiguo</a>
+            <a href="#"><i class="bi bi-music-note-list"></i> Bandoneón</a>
+            <a href="#"><i class="bi bi-music-player"></i> Otros instrumentos</a>
+            <a href="#"><i class="bi bi-gem"></i> Joyeros de plata</a>
+            <a href="#"><i class="bi bi-box-seam"></i> Baúles de madera</a>
+            <a href="#"><i class="bi bi-briefcase"></i> Maletas de cuero</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <main class="main-content">
+    <h1 class="mb-4 text-center">Bienvenido a la Tienda de Antigüedades</h1>
+    <p class="text-center">Seleccione una categoría en el menú de la izquierda para explorar nuestros productos antiguos.</p>
+    <div class="text-center">
+      <img src="https://sumamosdesign.com/wp-content/uploads/2020/06/tv1-1068x675.jpg" alt="Tienda Online" class="img-fluid rounded shadow">
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
